@@ -1,0 +1,23 @@
+{
+  "name": "@tsuiseki/api",
+  "version": "0.0.1",
+  "description": "Tsuiseki's API",
+  "main": "dist/bundle.js",
+  "repository": "git@github.com:Tsuiseki/api.git",
+  "author": "Agustin Carrasco <asermax@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@tsuiseki/common": "^0.0.2",
+    "mongoose": "^4.7.6"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "beta"
+  }
+}

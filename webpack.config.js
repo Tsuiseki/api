@@ -2,17 +2,18 @@ const { resolve }  = require('path');
 
 module.exports = function(env) {
   return {
-    entry: resolve(__dirname, 'src', 'index.js'),
-
+    entry: resolve(__dirname, 'src', 'server.js'),
+    target: 'node',
     output: {
       filename: 'bundle.js',
       path: resolve(__dirname, 'dist'),
     },
-
-    externals: {
-      mongoose: 'mongoose'
-    },
-
+    externals: [
+      'mongoose',
+      'express',
+      'body-parser',
+      '@tsuiseki/common'
+    ],
     module: {
       rules: [
         {

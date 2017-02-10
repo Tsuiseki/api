@@ -16,6 +16,6 @@ const port = process.env.PORT;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use('/api', router);
+app.use('/', router);
 
 app.listen(port);

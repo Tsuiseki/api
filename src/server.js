@@ -1,14 +1,17 @@
 import mongoose from 'mongoose';
 import express from 'express';
+import restify from 'express-restify-mongoose';
 import bodyParser from 'body-parser';
 import { models } from '@tsuiseki/common';
 
-// routes
+// mongoose
+mongoose.connect(process.env.MONGO_URL)
+
+// restify
 const router = express.Router();
 
-router.get('/', function(req, res) {
-  res.json({message: 'hello world'});
-});
+restify.serve(router, models.Show);
+restify.serve(router, models.ShowSource);
 
 // setup express instance
 const app = express();

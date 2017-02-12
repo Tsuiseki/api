@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@tsuiseki/common@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@tsuiseki/common/-/common-0.0.2.tgz#d502e3d3c62eaccfd6bc0a2760ef4f061f571339"
+"@tsuiseki/common@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@tsuiseki/common/-/common-0.0.4.tgz#b34d345919b63c013de68bd8afc8d123682b83c0"
 
 abbrev@1:
   version "1.0.9"
@@ -1845,8 +1845,8 @@ lodash.restparam@^3.0.0:
   resolved "https://registry.yarnpkg.com/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
 
 lodash@^4.14.0, lodash@^4.2.0:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+  version "4.16.6"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.16.6.tgz#d22c9ac660288f3843e16ba7d2b5d06cca27d777"
 
 longest@^1.0.1:
   version "1.0.1"

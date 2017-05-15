@@ -1,10 +1,11 @@
-import express from 'express'
+import Router from 'express-promise-router'
 import restify from 'express-restify-mongoose'
 import { models } from '@tsuiseki/common'
+import { register as registerShow } from './show'
 
-const router = express.Router()
+const router = Router()
 
-restify.serve(router, models.Show)
+registerShow(router)
 restify.serve(router, models.ShowSource)
 
 export default router

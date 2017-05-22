@@ -27,7 +27,7 @@ const handleImageUpload = async function(req, res) {
   if (show != null) {
     show.image = path.join(MEDIA_PREFIX, IMAGE_FOLDER, file.filename)
     await show.save()
-    res.sendStatus(200)
+    res.json({ image: show.image })
   } else {
     fs.unlinkSync(file.path)
     res.sendStatus(404)
@@ -38,6 +38,6 @@ export const register = (router) => {
   restify.serve(router, models.Show)
 
   // image upload
-  router.post('/api/v1/show/:id/image', upload.single('file'), handleImageUpload)
+  router.put('/api/v1/show/:id/image', upload.single('file'), handleImageUpload)
 }
 
